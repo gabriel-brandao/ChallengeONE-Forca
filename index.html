@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Forca</title>
+        <link rel="icon" href="images/forca.png">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <header>
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="images/a.png" alt="logo da letra a, de alura">
+                </a>
+            </h1>
+        </header>
+
+        <main>
+            <section id="secao-inicial">
+                <div class="botoes-inicial">
+                    <!-- alterar para button-->
+                    <a class="ancora" href="#secao-jogar"><button class="btn btn-inicia-jogo" type="button" onclick="comecaJogo()">Começar a Jogar</button></a>
+                    <a class="ancora" href="#secao-add-palavras"><button class="btn btn-add-palavras" type="button" onclick="adicionaPalavras()">Adicionar nova palavra</button></a>
+                </div>              
+            </section>
+
+            <section  id="secao-jogar">
+                <canvas class="tela-canvas">
+                    <span>e</span>
+                </canvas>
+
+                <div class="botoes-jogando">
+                    <button class="btn-novo-jogo">Novo Jogo</button>
+                    <button class="btn-desistir">Desistir</button>
+                </div>
+            </section>
+
+            <section id="secao-add-palavras">
+                <input type="text" name="" value="">
+                <span>máx 8 letras</span>
+                <button>novo jogo</button>
+                <button>desistir</button>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+
+    <script src="js/botoes.js"></script>
+    <script src="js/canvas.js"></script>
+</html>

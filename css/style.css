@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background: #F3F5FC;
+    --altura-div-botoes-inicial: calc(210px + 29px);
+    --largura-div-botoes-inicial: calc(317px);
+    --altura-div-botoes-jogando: 87px;
+    --largura-div-botoes-jogando: 688px;
+  }
+  
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    position: absolute;
+    top: 40px;
+    left: 84px;
+}
+
+#secao-inicial{
+    display: block;
+}
+
+.botoes-inicial{
+    position: absolute;
+    width: var(--largura-div-botoes-inicial);
+    height: var(--altura-div-botoes-inicial);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);/*em relação a sua largura e altura*/
+
+    background-color: tomato;
+}
+
+.ancora{
+    text-decoration: none;
+}
+
+.btn{
+    position: relative;
+    width: 317px;
+    height: 105px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;/*em relação ao eixo transversal*/
+    justify-content: center;/*em relação ao eixo principal*/
+    padding: 24px;
+    gap: 8px;
+
+    border-style: outset;
+    border-radius: 24px;
+    border-width: 1px;
+    border-color: #0A3871;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.btn-inicia-jogo{
+    top:0;
+    color: white;
+    background-color: #0A3871;
+}
+
+.btn-add-palavras{
+    top: 29px;
+    color: #0A3871;
+    background-color: white;
+}
+
+/********************************************/
+
+#secao-jogar {
+    display: none;
+    position: absolute;
+    width: 600px;
+    height: 500px;
+
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tela-canvas {
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;*/
+    width: 100%;
+    height: 100%;
+    
+
+
+    background-color: bisque;
+}
+
+.tela-caracteres {
+    width: 100%;
+    height: 100%;
+}
+
+.botoes-jogando{
+    position: relative;
+    width: var(--largura-div-botoes-jogando);/*por em unidades relativas para wrpa funcionar*/
+    height: var(--altura-div-botoes-jogando);
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2px;
+    align-content: center;
+    /*
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 1px;*/
+}
+
+.btn-novo-jogo{
+    height: 67px;
+    width: 332px;
+    color: white;
+    background-color: #0A3871;
+}   
+
+.btn-desistir{
+    height: 67px;
+    width: 332px;
+    color: #0A3871;
+    background-color: white;
+}
+
+/********************************************/
+
+#secao-add-palavras {
+    display: none;
+}
+
+
+
+
+
+
