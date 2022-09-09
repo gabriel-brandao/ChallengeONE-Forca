@@ -21,6 +21,9 @@ function adicionaPalavras(){
     secaoAdd.style.display = "block";
     
     console.log("teste2");
-
 }
 
+function novoJogo(){
+    limpaCanva();
+    iniciaCanvas();
+}
